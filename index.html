@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="POST">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <p>(*) Campos Obrigatórios</p>
+            <div>
+                <label for="conta_p">Tipo de Conta*</label>
+                <input type="radio" name="conta_p" id="conta_p" value="conta_p">Conta Pessoal
+                <input type="radio" name="conta_n" id="conta_n" value="conta_n">Conta de Negócios
+            </div>
+            <hr>
+            <div>
+                <label for="p_nome">Primeiro Nome*</label>
+                <input type="text" name="p_nome" required id="p_nome" placeholder="Digite seu primeiro Nome">
+            </div>
+            <hr>
+            <div>
+                <label for="u_nome">Último Nome*</label>
+                <input type="text" name="u_nome" required id="u_nome" placeholder="Digite seu último Nome">  
+            </div>
+            <hr>
+            <div>
+                <label for="pais_regiao">País/Região*</label>
+            <select name="pais_regiao" required id="pais_regiao">
+                <option value="" selected>Escolha</option>
+                <option value="br" selected>Brasil</option>
+                <option value="eua" selected>Estados Unidos</option>
+            </select>
+            </div>
+            <hr>
+            <div>
+                <label for="endereco">Endereço*</label>
+                <input type="text" name="endereco" required id="endereco" placeholder="Digite seu Endereço">
+            </div>
+            <hr>
+            <div>
+                <label for="endereco2">Endereço 2</label>
+                <input type="text" name="endereco2" id="endereco2" placeholder="Digite um segundo Endereço"> 
+            </div>
+            <hr>
+            <div>
+                <label for="cidade">Cidade*</label>
+                <input type="text" name="cidade" required id="cidade" placeholder="Digite sua Cidade">
+            </div>
+            <hr>
+            <div>
+                <label for="estado_provincia">Estado/Província*</label>
+            <select name="estado_provincia" required id="estado_provincia">
+                <option value="" selected>Escolha</option>
+                <option value="sp" selected>São Paulo</option>
+                <option value="bro" selected>Brooklyn</option>
+            </select>
+            </div>
+            <hr>
+            <div>
+                <label for="cep">Código Postal/CEP*</label>
+                <input type="number" name="cep" required id="cep" placeholder="Digite seu CEP"> 
+            </div>
+            <hr>
+            <div>
+                <label for="telefone">Telefone*</label>
+                <input type="tel" name="telefone" required id="telefone" placeholder="Digite seu Telefone">
+            </div>
+            <hr>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
